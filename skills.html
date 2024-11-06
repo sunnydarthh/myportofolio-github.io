@@ -1,0 +1,53 @@
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="skills.css" />
+  </head>
+  <body>
+    
+    <header>
+      <ul class="navmenu">  
+      <li><a href="index.html">Home</a></li>
+    </header>
+
+    <section class="slider-container">
+      <div class="slider-image">
+        <div class="slider-img">
+          <img src="perkodingan.jpg" alt="1" />
+          <h1>Pemograman</h1>
+          <div class="details">
+            <h2>Pemograman</h2>
+            <p>Leader | Rapper</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="copywriting.jpg" alt="2" />
+          <h1>Copywriting</h1>
+          <div class="details">
+            <h2>Copywriting</h2>
+            <p>Vocalist</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="public speaking.jpg" alt="3" />
+          <h1>Public Speaking</h1>
+          <div class="details">
+            <h2>Public Speaking</h2>
+            <p>Rapper</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").not(this).removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
